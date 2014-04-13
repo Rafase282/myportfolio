@@ -1,0 +1,56 @@
+<?php 
+$subtitle = "Contact me";
+$navigation = "../navigation/contact.inc";
+include("../HF/header.inc");?>
+
+			<article id="Contact">
+				<table summary="Call me">
+					<tr>
+						<th>My Voicemail:</th>
+						<td><object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=1fc029c74a911c68bc7f16ab207957888cc2f076&style=0" /></object></td>
+					</tr>
+					<tr><td></td></tr>
+				</table>
+				<table summary="Add me to messenger">
+					<tr>
+						<th>Email me:</th>
+						<td><a href="mailto:rafase282@gmail.com?Subject=Hello%20from%20your%site">Gmail</a></td>
+						<td><a href="mailto:rafase_282@hotmail.com?Subject=Hello%20from%20your%site">Hotmail</a></td>
+					</tr>
+					<tr><td></td></tr>
+				</table>
+				<table summary="Chat with me">
+					<tr>
+						<th>Instant Messenger</th>
+						<td><a href="aim:addbuddy?screenname=rafase">Add to AIM</a></td>
+						<td><a href="msnim:chat?contact=raase_282@hotmail.com">Add to MSN Messenger</a></td>
+					</tr>
+				</table>				
+			</article>
+			<br />
+			<article id="Feedback">
+				<h1>E-mail me some feed back directly</h1>
+				<br />
+				<p>With this form you don't need an email client. Just put yor valid email adress on the proper field,<br />
+				then write your feedback and click summit and it will send me an email from your account to mine with your feedback.
+				</p>
+				<br />
+				<form action="send_mail.php" method="post">
+					<table summary="Send me feedback">
+						<tr>
+							<td>Email Adress:</td>
+							<td><input type="text" name="email_address" value="" maxlength="100" /></td>
+						</tr>
+						<tr>
+							<td>Comments:</td>
+							<td><textarea rows="10" cols="50" name="comments"></textarea></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><input type="submit" value="Submit" /></td>
+						</tr>
+					</table>
+				</form>
+			</article>
+<?php include("../HF/footer.inc"); ?>
+</html>
