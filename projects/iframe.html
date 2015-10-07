@@ -1,0 +1,16 @@
+<?php 
+$subtitle = "Feed Back";
+$navigation = "../navigation/projects.inc";
+include("../HF/header.inc"); ?>
+			<h1> Leave your feedback please. </h1>
+			<div>
+				<input type="button" value="Bold" onclick="iframe.contentDocument.execCommand('bold', false, null);">
+				<input type="button" value="Italic" onclick="iframe.contentDocument.execCommand('italic', false, null);">
+				<input type="button" value="Underline" onclick="iframe.contentDocument.execCommand('underline', false, null);">
+				<input type="button" value="Add Link"onclick="createLink();">
+				<input type="button" value="Display Source"onclick="showSource();">
+			</div>
+			<br>
+			<iframe id="content" style='border:solid black; height: 300px; width: 400px' src="about:blank"></iframe>
+			<?php include("../HF/footer.inc"); ?>
+</html>

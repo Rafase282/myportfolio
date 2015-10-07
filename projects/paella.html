@@ -1,0 +1,81 @@
+<?php 
+$subtitle = "Custom order your Paella";
+$navigation = "../navigation/projects.inc";
+include("../HF/header.inc"); ?>
+			
+			<h1>Order your own Paella.</h1>
+			<form id="paellaform" action="processorder.php" method="post" name="paellaform">
+			<table summary="Paella Form">
+			<tr>
+			<td>First Name:</td>
+			<td><input type="text" name="firstname" id="firstname" value="" /></td>
+			</tr>
+			<tr>
+			<td>Last Name:</td>
+			<td><input type="text" name="lastname" id="lastname" value="" /></td>
+			</tr>
+			<tr>
+			<td>Email for invoice:</td>
+			<td><input type="text" name="email" id="email" value="" /></td>
+			</tr>
+			<tr>
+			<td>Phone to call when ready:</td>
+			<td><input type="text" name="phone" id="phone" value="" /></td>
+			</tr>
+			<tr>
+			<td></td>
+			</tr>
+			<tr>
+			<th>Choose sea food:</th>
+			<td><select name="seafood">
+			<option value="Shrimps">Shrimps</option>
+			<option value="Clams">Clams</option>
+			<option value="Lobster">Lobster</option>
+			<option value="Crayfish">Crayfish</option>
+			<option value="Salmon">Salmon</option>
+			<option value="Crab">Crab</option>
+			</select></td>
+			</tr>
+			<tr>
+			<td></td>
+			</tr>
+			<tr>
+			<td></td>
+			</tr>
+			<tr>
+			<th>Order size:</th>
+			<td><input type="radio" name="size1" value="One person" id="one" checked="checked" /> One person<br />
+			<input type="radio" name="size1" value="Two people" id="two" /> Two people<br />
+			<input type="radio" name="size1" value="Party Size (10 People)" id="party" /> Party Size (10 People)</td>
+			</tr>
+			<tr>
+			<td></td>
+			</tr>
+			<tr>
+			<th>Extras:</th>
+			<td><input type="checkbox" name="extras[]" value="Chicken" id="chicken" /> Chiken<br />
+			<input type="checkbox" name="extras[]" value="Beed" id="beed" /> Beef<br />
+			<input type="checkbox" name="extras[]" value="Pork" id="Pork" /> Pork<br />
+			<input type="checkbox" name="extras[]" value="Mix Vegetables" id="vegetables" /> Mix Vegetables<br />
+			<input type="checkbox" name="extras[]" value="Sea Food" id="sea" /> Sea Food</td>
+			</tr>
+			<tr>
+			<th>Piece Size:</th>
+			<td><input type="radio" name="size" value="Bite size" id="bite" /> Bite Size<br />
+			<input type="radio" name="size" value="Halves" id="half" /> Half Size<br />
+			<input type="radio" name="size" value="Whole Piece" id="big" /> Big Size</td>
+			</tr>
+			<tr>
+			<th>Customer Comments:</th>
+			<td>
+			<textarea name="comments" id="comments" rows="10" cols="48">
+			</textarea></td>
+			</tr>
+			<tr>
+			<th></th>
+			<td><input type="submit" value="Order Now" /></td>
+			</tr>
+			</table>
+			</form>
+			<?php include("../HF/footer.inc"); ?>
+</html>
